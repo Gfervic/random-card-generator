@@ -1,1 +1,104 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+body {
+  background: linear-gradient(to right, #52c234, #061700);
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  font-size: 70px;
+  width: 250px;
+  height: 370px;
+  text-align: center;
+  line-height: 370px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 3px rgb(0 0 0 / 60%);
+  position: relative;
+  color: black;
+}
+
+/* .heart,
+.diamond {
+  color: black;
+}
+
+.club,
+.spade {
+  color: black;
+} */
+
+.heart:before {
+  content: "♥";
+  color: red;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+}
+
+.heart:after {
+  content: "♥";
+  color: red;
+  position: absolute;
+  bottom: -150px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.diamond:before {
+  content: "♦";
+  color: red;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+}
+
+.diamond:after {
+  content: "♦";
+  color: red;
+  position: absolute;
+  bottom: -150px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.club:before {
+  content: "♣";
+  color: black;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+}
+
+.club:after {
+  content: "♣";
+  color: black;
+  position: absolute;
+  bottom: -150px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.spade:before {
+  content: "♠";
+  color: black;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+}
+
+.spade:after {
+  content: "♠";
+  color: black;
+  position: absolute;
+  bottom: -150px;
+  right: 10px;
+  transform: rotate(180deg);
+}
